@@ -38,5 +38,5 @@ def count_elements(array)
   array.each do |element|
     new_ary[element] += 1
   end
-  new_ary.uniq
+  new_ary
 end
