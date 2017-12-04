@@ -1,1 +1,25 @@
-# your code goes here
+def begins_with_r(array)
+  flag = true
+  array.each do |element|
+    flag = false if element[0] != "r"
+  end
+  flag
+end
+
+def contain_a(array)
+  new_ary = []
+  array.each do |element|
+    new_ary << element if element.include?("a")
+  end
+  new_ary
+end
+
+def first_wa(array)
+  needed_element = nil
+  array.each do |element|
+     if element.match(/wa/)
+       needed_element = element
+     end
+   end
+   needed_element
+end
