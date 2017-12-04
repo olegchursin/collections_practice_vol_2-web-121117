@@ -19,6 +19,7 @@ def first_wa(array)
   array.each do |element|
      if element.match(/wa/)
        needed_element = element
+       break # breaking code to return only the first element
      end
    end
    needed_element
