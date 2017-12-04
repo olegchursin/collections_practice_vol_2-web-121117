@@ -24,3 +24,11 @@ def first_wa(array)
    end
    needed_element
 end
+
+def remove_non_strings(array)
+  new_ary = []
+  array.each do |element|
+    new_ary << element if element.is_a?(String)
+  end
+  new_ary
+end
